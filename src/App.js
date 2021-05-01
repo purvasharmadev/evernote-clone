@@ -18,7 +18,18 @@ class App extends React.Component {
   render() {
     return (
       <div className="app-container">
-        <h1>Hello from the App</h1>
+        <h1
+          style={{
+            background: "#29487d",
+            textAlign: "center",
+            color: "white",
+            marginTop: "0",
+            marginBottom: "0.5em",
+            padding: "0.9em"
+          }}
+        >
+          NoteIt
+        </h1>
         <SidebarComponent
           selectedNoteIndex={this.state.selectedNoteIndex}
           notes={this.state.notes}
